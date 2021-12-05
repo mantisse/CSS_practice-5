@@ -1,37 +1,276 @@
-/* font-family: 'Titillium Web', sans-serif; */
-/* font-family: 'Raleway', sans-serif; */
-
 * {
     box-sizing: border-box;
 }
 
 body {
-    margin: 0;
     padding: 0;
     width: 100%;
-    height: 100vh;
-    background-color: #ffffff;
+    height: 120vh;
+    background-color: #fafafa;
     margin: 0 auto;
     text-align: center;
 }
 
 .container1 {
-    background-image: url(img/ananya-anand_new.png);
+    background-image: linear-gradient(to bottom, rgba(136, 115, 245, 0.5), rgba(38, 205, 247, 0.75)), url('img/ananya-anand_new.png');
     background-position: center;
     background-repeat: repeat;
     background-size: cover;
     width: 100%;
     height: 45%;
-    
+    color: #fafafa;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.container1 .fab {
+    font-size: 40px;
+    color: greenyellow;
+    margin-top: 30px;
+}
+
+.container1 .fas {
+    font-size: 30px;
+    margin: 10px;
+}
+
+h2 {
+    color: black;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.firstParagraph {
+    color: #e6e6e6;
+    font-size: 15px;
+    margin: 4px;
+}
+
+.timeLeft {
+    display: flex;
+    justify-content: center;
+}
+
+.time {
+    width: 100px;
+    margin: 5px;
+    color: #fafafa;
+}
+
+.firstLine {
+    font-family: 'Raleway', sans-serif;
+    font-size: 50px;
+    margin: 0;
+}
+
+.secondLine {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 10px;
+    margin: 0;
+}
+
+.email input {
+    width: 415px;
+    outline: none;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #fafafa;
+    padding-bottom: 8px;
+    margin: 15px 0;
+}
+
+.email input::placeholder {
+    font-family: 'Titillium Web', sans-serif;
+    color: #fafafa;
+}
+
+
+.submit input {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 15px;
+    background-color: #ea1e63;
+    width: 150px;
+    outline: none;
+    border: none;
+    color: #fafafa;
+    padding: 10px;
+    border-radius: 2px;
+    box-shadow: 2px 2px 5px #00000083;
+}
+
+.submit input:hover {
+    background-color: #ff0055;
 }
 
 .container2 {
     width: 100%;
     height: 35%;
+    display: flex;
+    justify-content: center;
+}
+
+.container2 h4 {
+    font-family: 'Titillium Web', sans-serif;
+    /* font-weight: bolder; */
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.container2 p {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 13px;
+}
+
+.container2 p strong {
+    color: #ea1e63;
+    font-weight: normal;
+}
+
+.percentLine1,
+.percentLine2,
+.percentLine3 {
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: small;
+}
+
+.percentLine1 .lineLeft {
+    width: 90%;
+    border-bottom: 2px solid #03a9f5;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.percentLine1 .lineRight {
+    width: 10%;
+    border-bottom: 2px solid #eeeeee;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.percentLine2 .lineLeft {
+    width: 86%;
+    border-bottom: 2px solid #03a9f5;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.percentLine2 .lineRight {
+    width: 14%;
+    border-bottom: 2px solid #eeeeee;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.percentLine3 .lineLeft {
+    width: 75%;
+    border-bottom: 2px solid #03a9f5;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.percentLine3 .lineRight {
+    width: 25%;
+    border-bottom: 2px solid #eeeeee;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.box {
+    width: 400px;
+    margin: 30px;
+    text-align: left;
+}
+
+.inputBox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.inputBox input {
+    width: 180px;
+    padding: 3px 0;
+    outline: none;
+    border: none;
+    background: none;
+    border-bottom: 1px solid grey;
+}
+
+.inputBox textarea {
+    width: 100%;
+    margin: 10px 0;
+    padding: 3px 0;
+    outline: none;
+    border: none;
+    background: none;
+    border-bottom: 1px solid grey;
+}
+
+.inputBox input::placeholder,
+.inputBox textarea::placeholder {
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.container2 .submit {
+    margin-top: 18px;
+    text-align: right;
 }
 
 .container3 {
     background-color: #03a9f5;
     width: 100%;
     height: 20%;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 12px;
+    margin: 0 auto;
+    text-align: center;
+    color: #fafafa;
+}
+
+.logo {
+    padding: 10px 0;
+    font-size: small;
+    letter-spacing: 14px;
+}
+
+.logo i {
+    color: #fafafa;
+}
+
+.container3 h3 {
+    font-size: 30px;
+    margin: 0;
+    padding: 5px 0;
+}
+
+.container3 p {
+    margin: 0;
+    color: #fafafa;
+}
+
+.container3 strong {
+    letter-spacing: 1px;
+}
+
+.fixed {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: fixed;
+    right: 200px;
+    bottom: 50px;
+    background-color: #ea1e63;
+    color: #fafafa;
+    text-decoration: none;
+    font-size: 20px;
+    box-shadow: 2px 2px 5px #00000083;
 }
